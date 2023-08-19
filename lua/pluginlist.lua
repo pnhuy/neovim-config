@@ -20,7 +20,9 @@ return {
 
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
+	{
+		"neovim/nvim-lspconfig",
+	},
 
 	'folke/neodev.nvim', -- new
 
@@ -107,5 +109,14 @@ return {
 		'windwp/nvim-autopairs',
 		event = "InsertEnter",
 		opts = {} -- this is equalent to setup({}) function
+	},
+	{
+		'akinsho/flutter-tools.nvim',
+		lazy = false,
+		dependencies = {
+			'nvim-lua/plenary.nvim',
+			'stevearc/dressing.nvim', -- optional for vim.ui.select
+		},
+		config = true,
 	}
 }
