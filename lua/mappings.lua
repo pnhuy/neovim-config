@@ -18,3 +18,5 @@ vim.keymap.set("n", "gR", function() require("trouble").open("lsp_references") e
 -- accept current suggestion
 vim.api.nvim_set_keymap('i', '<C-/>', 'copilot#Accept("<CR>")', {expr=true, silent=true})
 
+-- Exit the terminal with Esc
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
