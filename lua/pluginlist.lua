@@ -118,5 +118,17 @@ return {
 			'stevearc/dressing.nvim', -- optional for vim.ui.select
 		},
 		config = true,
-	}
+	},
+    {
+        'jay-babu/mason-nvim-dap.nvim',
+    },
+    {
+        'mfussenegger/nvim-dap',
+    },
+    {
+        'rcarriga/nvim-dap-ui',
+        dependencies = {
+            'mfussenegger/nvim-dap',
+        },
+    }
 }
