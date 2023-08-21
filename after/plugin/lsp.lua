@@ -25,6 +25,12 @@ local on_attach = function(_, bufnr)
 	if vim.bo.filetype == 'dart' then
 		bufmap('<leader>F', require('telescope').extensions.flutter.commands)
 	end
+
+	-- add lsp_signature
+	local signature_setup = {
+		hint_prefix = " ",
+	}
+	require("lsp_signature").on_attach(signature_setup, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
