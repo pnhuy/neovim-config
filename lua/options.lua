@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set('n', '<leader>v', function() print("Hello, world") end)
 vim.g.maplocalleader = ' '
 vim.o.clipboard = 'unnamedplus'
 vim.o.number = true

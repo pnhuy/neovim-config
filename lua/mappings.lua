@@ -20,3 +20,14 @@ vim.api.nvim_set_keymap('i', '<C-/>', 'copilot#Accept("<CR>")', {expr=true, sile
 
 -- Exit the terminal with Esc
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
+
+-- Make the keymapping to fix first character uppercase in command such as :Wq
+vim.keymap.set('c', 'W!', 'w!')
+vim.keymap.set('c', 'Q!', 'q!')
+vim.keymap.set('c', 'Wq', 'wq')
+vim.keymap.set('c', 'Wa', 'wa')
+vim.keymap.set('c', 'wQ', 'wq')
+vim.keymap.set('c', 'WQ', 'wq')
+vim.keymap.set('c', 'W', 'w')
+vim.keymap.set('c', 'Q', 'q')
+vim.keymap.set('c', 'Qall', 'qall')

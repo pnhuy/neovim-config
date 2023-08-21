@@ -71,3 +71,5 @@ dap.configurations.python = {
       end,
   }
 }
+
+vim.keymap.set('n', '<leader>v', function() require('swenv.api').pick_venv() end)
