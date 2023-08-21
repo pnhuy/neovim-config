@@ -163,5 +163,11 @@ return {
           "sindrets/diffview.nvim",        -- optional
         },
         config = true
+    },
+
+    {
+        'akinsho/toggleterm.nvim',
+        version = "*",
+        config = true
     }
 }
