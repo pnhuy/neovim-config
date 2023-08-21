@@ -6,24 +6,6 @@ require("mason-nvim-dap").setup({
 local dap = require('dap')
 local dapui = require('dapui')
 
-dap.adapters.python = {
-    type = 'executable',
-    command = '/Users/huypham/.local/share/nvim/mason/packages/debugpy/venv/bin/python',
-    args = { '-m', 'debugpy.adapter' },
-}
-
-dap.configurations.python = {
-    {
-        type = 'python',
-        request = 'launch',
-        name = "Launch file",
-        program = "${file}",
-        pythonPath = function()
-            return 'python3'
-        end,
-    },
-}
-
 dapui.setup()
 
 -- dap.listeners.after.event_initialized["dapui_config"] = function()
