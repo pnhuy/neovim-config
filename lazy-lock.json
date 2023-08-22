@@ -6,6 +6,7 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "44b16d11215dce86f253ce0c30949813c0a90765" },
   "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
   "copilot.vim": { "branch": "release", "commit": "f2a4acd62587c62910bda0b79405c585af43c002" },
+  "dashboard-nvim": { "branch": "master", "commit": "c17d3210b3dec8798b4fc82a11c542989251f85d" },
   "diffview.nvim": { "branch": "main", "commit": "7e5a85c186027cab1e825d018f07c350177077fc" },
   "dressing.nvim": { "branch": "master", "commit": "6bde51adabba06f7fd4a469885a85f36d78a5f52" },
   "flutter-tools.nvim": { "branch": "main", "commit": "561d85b16d8ca2938820a9c26b2fe74096d89c81" },
