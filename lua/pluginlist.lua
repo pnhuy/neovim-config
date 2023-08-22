@@ -191,5 +191,9 @@ return {
 
     {
         'jbyuki/nabla.nvim',
+    },
+
+    {
+        'famiu/bufdelete.nvim',
     }
 }
