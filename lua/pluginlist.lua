@@ -187,5 +187,9 @@ return {
               -- refer to the configuration section below
             }
         end
+    },
+
+    {
+        'jbyuki/nabla.nvim',
     }
 }
