@@ -52,27 +52,16 @@ require('lspconfig').dartls.setup {
 }
 
 -- mason
+local lsp_config =  { "lua_ls", "rust_analyzer", "pyright", "clangd", "tsserver" }
+
 require("mason").setup()
 require("mason-lspconfig").setup {
-	ensure_installed = { "lua_ls", "rust_analyzer", "pyright", "clangd", "tsserver" },
+	ensure_installed = lsp_config,
 }
 
-require('lspconfig').pyright.setup {
-	on_attach = on_attach,
-	capabilities = capabilities,
-}
-
-require('lspconfig').tsserver.setup {
-	on_attach = on_attach,
-	capabilities = capabilities,
-}
-
-require('lspconfig').lua_ls.setup {
-	on_attach = on_attach,
-	capabilities = capabilities,
-}
-
-require('lspconfig').rust_analyzer.setup {
-	on_attach = on_attach,
-	capabilities = capabilities,
-}
+for _, server in ipairs(lsp_config) do
+	require("lspconfig")[server].setup {
+		on_attach = on_attach,
+		capabilities = capabilities,
+	}
+end
