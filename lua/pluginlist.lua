@@ -107,9 +107,9 @@ return {
         version = '^1.0.0', -- optional: only update when a new 1.x version is released
     },
 
-    {
-        "github/copilot.vim",
-    },
+    -- {
+    --     "github/copilot.vim",
+    -- },
 
     {
         'windwp/nvim-autopairs',
@@ -204,5 +204,9 @@ return {
           require('dashboard').setup { }
         end,
         dependencies = { {'nvim-tree/nvim-web-devicons'} }
+    },
+
+    {
+        "zbirenbaum/copilot.lua",
     }
 }

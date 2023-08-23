@@ -16,9 +16,9 @@ bufmap("<leader>xq", function() require("trouble").open("quickfix") end)
 bufmap("<leader>xl", function() require("trouble").open("loclist") end)
 bufmap("gR", function() require("trouble").open("lsp_references") end)
 
--- Copilot.vim
+-- Copilot.vim (not used for zbirenbaum/copilot.lua)
 -- accept current suggestion
-vim.api.nvim_set_keymap('i', '<C-/>', 'copilot#Accept("<CR>")', {expr=true, silent=true})
+-- vim.api.nvim_set_keymap('i', '<C-/>', 'copilot#Accept("<CR>")', {expr=true, silent=true})
 
 -- Exit the terminal with Esc
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
