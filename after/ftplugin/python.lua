@@ -73,3 +73,19 @@ dap.configurations.python = {
 }
 
 vim.keymap.set('n', '<leader>v', function() require('swenv.api').pick_venv() end)
+
+-- Config formatter
+vim.g.neoformat_python_ruff = {
+  exe = vim.fn.expand('~/.local/share/nvim/mason/bin/ruff'),
+  args = {
+      'check',
+      '--fix',
+      '--line-length 120',
+      '--select ALL'
+  },
+  replace = 1,
+  stdin = 0,
+  valid_exit_codes = { 0, 1 },
+}
+
+vim.g.neoformat_enabled_python = { 'ruff', 'black' }

@@ -22,6 +22,7 @@
   "nabla.nvim": { "branch": "master", "commit": "8c143ad2b3ab3b8ffbd51e238ccfcbd246452a7e" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "e62babc62c7f8de579ad69d0a5d2613bff864126" },
   "neodev.nvim": { "branch": "main", "commit": "f8a4200951189f7c831cfb698a2e05791e9fd83c" },
+  "neoformat": { "branch": "master", "commit": "0c285d7a7c06a6ee88db70871a274797693fce42" },
   "neogit": { "branch": "master", "commit": "00b4486197e7ad7cf98e128a3c663d79a2cc962f" },
   "nui.nvim": { "branch": "main", "commit": "9e3916e784660f55f47daa6f26053ad044db5d6a" },
   "nvim-autopairs": { "branch": "master", "commit": "ae5b41ce880a6d850055e262d6dfebd362bb276e" },

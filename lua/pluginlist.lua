@@ -208,5 +208,9 @@ return {
 
     {
         "zbirenbaum/copilot.lua",
+    },
+
+    {
+        "sbdchd/neoformat",
     }
 }
