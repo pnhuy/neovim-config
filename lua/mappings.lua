@@ -7,7 +7,7 @@ local cmdmap = function(command_1, command_2)
 end
 
 bufmap('<leader>f', require('telescope.builtin').find_files)
-bufmap('<leader>e', '<Cmd>Neotree toggle<CR>')
+bufmap('<leader>e', '<Cmd>Neotree toggle reveal<CR>')
 bufmap('<leader>tt', '<Cmd>ToggleTerm direction=float<CR>')
 bufmap('<leader>p', require('telescope').extensions.projects.projects)
 
