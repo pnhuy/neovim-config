@@ -13,12 +13,12 @@ bufmap('<leader>p', require('telescope').extensions.projects.projects)
 
 
 -- Trouble Plugin
-bufmap("<leader>xx", function() require("trouble").open() end)
-bufmap("<leader>xw", function() require("trouble").open("workspace_diagnostics") end)
-bufmap("<leader>xd", function() require("trouble").open("document_diagnostics") end)
-bufmap("<leader>xq", function() require("trouble").open("quickfix") end)
-bufmap("<leader>xl", function() require("trouble").open("loclist") end)
-bufmap("gR", function() require("trouble").open("lsp_references") end)
+bufmap("<leader>xx", function() require("trouble").toggle() end)
+bufmap("<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
+bufmap("<leader>xd", function() require("trouble").toggle("document_diagnostics") end)
+bufmap("<leader>xq", function() require("trouble").toggle("quickfix") end)
+bufmap("<leader>xl", function() require("trouble").toggle("loclist") end)
+bufmap("gR", function() require("trouble").toggle("lsp_references") end)
 
 -- Copilot.vim (not used for zbirenbaum/copilot.lua)
 -- accept current suggestion
