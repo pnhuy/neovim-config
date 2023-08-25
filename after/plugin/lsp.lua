@@ -59,6 +59,12 @@ require("mason-lspconfig").setup {
 	ensure_installed = lsp_config,
 }
 
+require('mason-tool-installer').setup {
+	ensure_installed = {
+		'djlint', 'black', 'ruff', 'prettier'
+	}
+}
+
 for _, server in ipairs(lsp_config) do
 	require("lspconfig")[server].setup {
 		on_attach = on_attach,

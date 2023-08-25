@@ -212,5 +212,9 @@ return {
 
     {
         "sbdchd/neoformat",
+    },
+
+    {
+        'WhoIsSethDaniel/mason-tool-installer.nvim',
     }
 }
