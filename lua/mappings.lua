@@ -38,3 +38,9 @@ cmdmap('W', 'w')
 cmdmap('Q', 'q')
 cmdmap('Qall', 'qall')
 cmdmap('bd', 'Bd')
+
+
+-- Neogen
+local opts = { noremap = true, silent = true }
+vim.api.nvim_set_keymap("n", "<leader>ng", ":lua require('neogen').generate()<CR>", opts)
+vim.keymap.set("i", "<C-G>", function () require('neogen').generate() end, opts)
