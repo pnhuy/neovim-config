@@ -5,5 +5,5 @@ vim.opt_local.expandtab = true
 vim.opt_local.smartindent = true
 
 require("flutter-tools").setup {
-    flutter_lookup_cmd = "dirname $(which flutter)",
+    flutter_path = vim.fn.substitute(vim.fn.system('which ' .. 'flutter'), '\n', '', 'g'),
 }
