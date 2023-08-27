@@ -1,4 +1,4 @@
 vim.api.nvim_create_autocmd({"CursorHold", "CursorHoldI"}, {
-    pattern = {"*.md", "*.tex", "*.txt"},
+    pattern = {"*.md", "*.tex" },
     callback = require('nabla').popup,
 })
