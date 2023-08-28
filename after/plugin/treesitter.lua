@@ -1,5 +1,5 @@
 require('nvim-treesitter.configs').setup {
-    ensure_installed = { 'vim', 'vimdoc', 'lua', 'cpp', 'python', 'html', 'htmldjango', 'xml', 'javascript', 'typescript' , 'tsx', 'markdown', 'latex' },
+    ensure_installed = { 'vim', 'vimdoc', 'lua', 'cpp', 'python', 'html', 'json', 'htmldjango', 'xml', 'javascript', 'typescript' , 'tsx', 'markdown', 'latex' },
     auto_install = false,
     highlight = { enable = true },
     indent = { enable = true },
