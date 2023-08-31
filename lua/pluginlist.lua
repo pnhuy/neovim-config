@@ -256,4 +256,8 @@ return {
             vim.cmd('let g:vimtex_view_method = "sioyek"')
         end
     },
+
+    {
+        'simrat39/rust-tools.nvim',
+    }
 }

@@ -61,7 +61,7 @@ require("mason-lspconfig").setup {
 
 require('mason-tool-installer').setup {
 	ensure_installed = {
-		'djlint', 'black', 'ruff', 'prettier'
+		'djlint', 'black', 'ruff', 'prettier', 'codelldb'
 	}
 }
 
