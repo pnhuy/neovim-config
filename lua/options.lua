@@ -12,6 +12,7 @@ vim.o.updatetime = 300
 -- More here: https://github.com/neovim/neovim/issues/2528
 -- vim.o.termguicolors = true
 vim.o.mouse = '' -- set a for all
+vim.o.cmdheight = 1
 vim.cmd("set nofixendofline")
 -- Show Whitespaces
 vim.cmd("if has('gui_running') || ($TERM == 'xterm-kitty')\
