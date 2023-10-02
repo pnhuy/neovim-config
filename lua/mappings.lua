@@ -44,3 +44,9 @@ cmdmap('bd', 'Bd')
 local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "<leader>ng", ":lua require('neogen').generate()<CR>", opts)
 vim.keymap.set("i", "<C-G>", function () require('neogen').generate() end, opts)
+
+-- Naviation in Insert mode
+vim.keymap.set("i", "<C-h>", "<Left>", opts)
+vim.keymap.set("i", "<C-j>", "<Down>", opts)
+vim.keymap.set("i", "<C-k>", "<Up>", opts)
+vim.keymap.set("i", "<C-l>", "<Right>", opts)
