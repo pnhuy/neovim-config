@@ -11,7 +11,7 @@ vim.o.updatetime = 300
 -- Disable termguicolors because this causes Cursor flickering
 -- More here: https://github.com/neovim/neovim/issues/2528
 -- vim.o.termguicolors = true
-vim.o.mouse = '' -- set a for all
+vim.o.mouse = 'a' -- set a for all
 vim.o.cmdheight = 1
 vim.cmd("set nofixendofline")
 -- Show Whitespaces
