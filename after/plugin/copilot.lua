@@ -1,3 +1,8 @@
+local node_path = string.gsub(vim.fn.system('ls ~/.nvm/versions/node/*/bin/node | tail -n 1'), '%s*$', '')
+if vim.fn.executable(node_path) == 0 then
+    node_path = string.gsub(vim.fn.system('which node'), '%s*$', '')
+end
+
 require("copilot").setup({
     suggestion = {
         enabled = true,
@@ -21,5 +26,6 @@ require("copilot").setup({
         svn = false,
         cvs = false,
         ["."] = true
-    }
+    },
+    copilot_node_command = node_path,
 })
