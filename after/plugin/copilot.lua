@@ -1,6 +1,11 @@
-local node_path = string.gsub(vim.fn.system('ls ~/.nvm/versions/node/*/bin/node | tail -n 1'), '%s*$', '')
-if vim.fn.executable(node_path) == 0 then
-    node_path = string.gsub(vim.fn.system('which node'), '%s*$', '')
+local nvm_path = string.gsub(vim.fn.system('ls ~/.nvm/versions/node/*/bin/node | tail -n 1'), '%s*$', '')
+local fnm_path = string.gsub(vim.fn.system("ls ~/Library/Application\\ Support/fnm/node-versions/*/installation/bin/node | tail -n 1"), '%s*$', '')
+local node_path = string.gsub(vim.fn.system('which node'), '%s*$', '')
+
+if vim.fn.executable(nvm_path) == 1 then
+    node_path = nvm_path
+elseif vim.fn.executable(fnm_path) == 1 then
+    node_path = fnm_path
 end
 
 require("copilot").setup({
